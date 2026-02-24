@@ -13,8 +13,8 @@ export function Projects() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Proven <span className="text-primary">Results</span></h2>
-            <p className="text-xl text-muted-foreground">Real-world case studies of organizational turnarounds and execution delivery.</p>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Key <span className="text-primary">Achievements</span></h2>
+            <p className="text-xl text-muted-foreground">Selected highlights of high-impact IT projects and transformations.</p>
           </div>
         </div>
 

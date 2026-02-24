@@ -9,7 +9,7 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <Link href="/" className="font-display font-bold text-2xl tracking-tight text-white">
-          VOIGT<span className="text-primary">.AG</span>
+          JANZIK<span className="text-primary">.ME</span>
         </Link>
         
         {/* Desktop Nav */}

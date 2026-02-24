@@ -8,34 +8,35 @@ async function seedDatabase() {
   const existingExperiences = await storage.getExperiences();
   if (existingExperiences.length === 0) {
     await storage.createExperience({
-      role: "Interim COO / CRO",
-      company: "Various IT & Tech Companies",
-      period: "2018 - Present",
-      description: "Leading turnarounds and restructuring IT operations for scalable growth.",
+      role: "Digital Leader & IT Executive",
+      company: "janzik.me",
+      period: "2015 - Present",
+      description: "Driving digital transformation and leading high-performing IT organizations with a focus on sustainable growth and innovation.",
       order: 1
     });
     await storage.createExperience({
-      role: "Chief Technology Officer",
-      company: "Global Tech Solutions GmbH",
-      period: "2010 - 2018",
-      description: "Scaled engineering team from 20 to 150+. Modernized tech stack and implemented agile practices.",
+      role: "Senior IT Manager",
+      company: "Enterprise Technology Group",
+      period: "2010 - 2015",
+      description: "Managed global infrastructure projects and led cross-functional teams to deliver critical business systems.",
       order: 2
     });
     
-    await storage.createSkill({ name: "IT Strategy", category: "Leadership", proficiency: 95 });
-    await storage.createSkill({ name: "Turnaround Management", category: "Leadership", proficiency: 90 });
-    await storage.createSkill({ name: "Agile Organization", category: "Methodology", proficiency: 85 });
-    await storage.createSkill({ name: "Cloud Architecture", category: "Technical", proficiency: 80 });
+    await storage.createSkill({ name: "IT Strategy & Governance", category: "Leadership", proficiency: 95 });
+    await storage.createSkill({ name: "Digital Transformation", category: "Leadership", proficiency: 92 });
+    await storage.createSkill({ name: "Team Leadership & Development", category: "Leadership", proficiency: 90 });
+    await storage.createSkill({ name: "Cloud Strategy (AWS/Azure)", category: "Technical", proficiency: 85 });
+    await storage.createSkill({ name: "Agile & Lean Methodologies", category: "Methodology", proficiency: 88 });
 
     await storage.createProject({
-      title: "FinTech Restructuring",
-      description: "Redesigned core processes and governance structure under high pressure.",
-      result: "Stabilized operations and reduced lead times by 40%."
+      title: "Global Infrastructure Modernization",
+      description: "Led the transition of legacy on-premise systems to a modern cloud-native architecture.",
+      result: "Achieved 30% reduction in operational costs and 99.99% uptime."
     });
     await storage.createProject({
-      title: "AI Integration in Operations",
-      description: "Implemented custom AI copilots for decision preparation in middle management.",
-      result: "Increased operational efficiency by 25%."
+      title: "IT Organization Restructuring",
+      description: "Redesigned the IT service delivery model to align with business objectives.",
+      result: "Improved internal stakeholder satisfaction by 45%."
     });
   }
 }

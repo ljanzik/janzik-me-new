@@ -8,8 +8,8 @@ export function Skills() {
     <section className="py-32 bg-background relative" id="skills">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Core <span className="text-primary">Competencies</span></h2>
-          <p className="text-xl text-muted-foreground">The intersection of business strategy, organizational design, and advanced technology.</p>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Expertise <span className="text-primary">& Skills</span></h2>
+          <p className="text-xl text-muted-foreground">The foundation of my digital leadership: bridging technology and business goals.</p>
         </div>
 
         {isLoading ? (

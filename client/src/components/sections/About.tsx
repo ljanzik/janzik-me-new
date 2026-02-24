@@ -18,7 +18,7 @@ export function About() {
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all duration-700" />
               <img 
                 src="/images/profile.jpg" 
-                alt="Claas Voigt Profile" 
+                alt="Leif Janzik Profile" 
                 onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"; }}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
               />
@@ -37,29 +37,29 @@ export function About() {
           >
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Where Strategy meets <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">Execution</span>
+                Leif Janzik: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">Digital Leader</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                With over 20 years of experience leading tech-driven organizations, my focus is bridging the gap between high-level strategy and ground-level execution. I build teams, optimize processes, and leverage AI to create scalable, resilient growth frameworks.
+                As an experienced IT executive, I specialize in navigating the complexities of modern digital landscapes. My approach combines strategic vision with technical depth to build resilient, innovative organizations that drive real business value.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">20<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Years Leadership</p>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">15<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Years Experience</p>
+              </div>
+              <div>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">30<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Core Projects</p>
               </div>
               <div>
                 <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Companies Advised</p>
+                <p className="text-muted-foreground font-medium">Team Members Led</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">€100<span className="text-primary">M+</span></h4>
-                <p className="text-muted-foreground font-medium">Value Managed</p>
-              </div>
-              <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">5<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Major Turnarounds</p>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">99.9<span className="text-primary">%</span></h4>
+                <p className="text-muted-foreground font-medium">System Uptime</p>
               </div>
             </div>
           </motion.div>

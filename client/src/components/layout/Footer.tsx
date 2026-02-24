@@ -6,9 +6,9 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start">
           <Link href="/" className="font-display font-bold text-2xl tracking-tight text-white mb-2">
-            VOIGT<span className="text-primary">.AG</span>
+            JANZIK<span className="text-primary">.ME</span>
           </Link>
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Claas Voigt. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Leif Janzik. All rights reserved.</p>
         </div>
         
         <div className="flex gap-6">
