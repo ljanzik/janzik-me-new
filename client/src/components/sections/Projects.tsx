@@ -33,20 +33,20 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group p-8 rounded-3xl bg-background border border-white/10 hover:border-primary/50 hover:bg-white-[0.02] transition-all duration-500 relative overflow-hidden flex flex-col"
+                className="group p-8 rounded-3xl bg-card border border-border hover:border-primary/50 transition-all duration-500 relative overflow-hidden flex flex-col shadow-sm hover:shadow-md"
               >
                 <div className="absolute top-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-all transform translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <ArrowUpRight className="text-primary w-5 h-5" />
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-display font-bold text-white mb-4 pr-12">{proj.title}</h3>
+                <h3 className="text-2xl font-display font-bold text-foreground mb-4 pr-12">{proj.title}</h3>
                 <p className="text-muted-foreground mb-8 flex-grow leading-relaxed">{proj.description}</p>
                 
-                <div className="pt-6 border-t border-white/10 mt-auto">
+                <div className="pt-6 border-t border-border mt-auto">
                   <span className="text-xs font-mono text-primary uppercase tracking-widest block mb-2">The Impact</span>
-                  <p className="text-white font-medium">{proj.result}</p>
+                  <p className="text-foreground font-medium">{proj.result}</p>
                 </div>
               </motion.div>
             ))}

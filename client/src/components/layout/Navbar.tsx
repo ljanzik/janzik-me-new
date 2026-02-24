@@ -6,29 +6,29 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="font-display font-bold text-2xl tracking-tight text-white">
+        <Link href="/" className="font-display font-bold text-2xl tracking-tight text-foreground">
           JANZIK<span className="text-primary">.ME</span>
         </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">About</a>
-          <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Experience</a>
-          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Projects</a>
-          <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Skills</a>
+          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</a>
+          <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Experience</a>
+          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Projects</a>
+          <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Skills</a>
         </nav>
         
         <div className="hidden md:block">
-          <a href="#contact" className="px-6 py-2.5 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] transition-all duration-300">
-            Let's Talk
+          <a href="#contact" className="px-6 py-2.5 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+            Get in Touch
           </a>
         </div>
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden p-2 text-white"
+          className="md:hidden p-2 text-foreground"
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu className="w-6 h-6" />

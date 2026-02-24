@@ -14,15 +14,14 @@ export function About() {
             className="relative"
           >
             {/* abstract professional portrait fallback */}
-            <div className="aspect-[4/5] max-w-md mx-auto relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 border border-white/5 group">
-              <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all duration-700" />
+            <div className="aspect-[4/5] max-w-md mx-auto relative rounded-3xl overflow-hidden shadow-2xl border border-border group">
               <img 
                 src="/images/profile.jpg" 
                 alt="Leif Janzik Profile" 
                 onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"; }}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
+                className="w-full h-full object-cover transition-all duration-700 scale-105 group-hover:scale-100" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent z-20" />
             </div>
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 blur-[64px] -z-10" />
@@ -44,21 +43,21 @@ export function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
+            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">15<span className="text-primary">+</span></h4>
+                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">15<span className="text-primary">+</span></h4>
                 <p className="text-muted-foreground font-medium">Years Experience</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">30<span className="text-primary">+</span></h4>
+                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">30<span className="text-primary">+</span></h4>
                 <p className="text-muted-foreground font-medium">Core Projects</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
+                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
                 <p className="text-muted-foreground font-medium">Team Members Led</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">99.9<span className="text-primary">%</span></h4>
+                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">99.9<span className="text-primary">%</span></h4>
                 <p className="text-muted-foreground font-medium">System Uptime</p>
               </div>
             </div>

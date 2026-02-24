@@ -27,9 +27,9 @@ export function Skills() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="px-6 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-md hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_20px_rgba(0,229,255,0.2)] transition-all duration-300 flex items-center gap-3 cursor-default"
+                className="px-6 py-4 rounded-full border border-border bg-card hover:border-primary hover:shadow-md transition-all duration-300 flex items-center gap-3 cursor-default"
               >
-                <span className="font-medium text-white/90">{skill.name}</span>
+                <span className="font-medium text-foreground/90">{skill.name}</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span className="text-primary font-mono text-sm">{skill.proficiency}%</span>
               </motion.div>

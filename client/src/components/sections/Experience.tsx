@@ -38,11 +38,11 @@ export function Experience() {
                 <div className="hidden md:block md:w-1/2" />
                 
                 <div className={`pl-12 md:w-1/2 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                  <div className="p-8 rounded-3xl bg-background border border-white/5 hover:border-primary/30 transition-colors shadow-xl">
+                  <div className="p-8 rounded-3xl bg-card border border-border hover:border-primary/30 transition-colors shadow-sm">
                     <span className="inline-block px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm tracking-wider uppercase mb-4">
                       {exp.period}
                     </span>
-                    <h3 className="text-2xl font-bold font-display text-white mb-2">{exp.role}</h3>
+                    <h3 className="text-2xl font-bold font-display text-foreground mb-2">{exp.role}</h3>
                     <h4 className="text-lg text-primary/80 mb-4">{exp.company}</h4>
                     <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
                   </div>
