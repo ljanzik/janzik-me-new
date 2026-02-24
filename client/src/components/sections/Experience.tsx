@@ -1,0 +1,57 @@
+import { motion } from "framer-motion";
+import { useExperiences } from "@/hooks/use-cv";
+
+export function Experience() {
+  const { data: experiences, isLoading } = useExperiences();
+
+  return (
+    <section className="py-32 bg-card relative overflow-hidden" id="experience">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Professional <span className="text-primary">Track Record</span></h2>
+          <p className="text-xl text-muted-foreground">Decades of navigating complex organizational structures, leading turnarounds, and driving sustainable growth.</p>
+        </div>
+
+        {isLoading ? (
+          <div className="space-y-8 max-w-4xl mx-auto">
+            {[1, 2, 3].map(i => (
+              <div key={i} className="h-40 bg-white/5 rounded-2xl animate-pulse border border-white/5" />
+            ))}
+          </div>
+        ) : (
+          <div className="max-w-4xl mx-auto relative">
+            {/* Sleek Vertical Line */}
+            <div className="absolute left-[15px] md:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-primary via-primary/20 to-transparent transform md:-translate-x-1/2" />
+
+            {experiences?.sort((a, b) => a.order - b.order).map((exp, index) => (
+              <motion.div
+                key={exp.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={`relative flex flex-col md:flex-row gap-8 mb-16 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+              >
+                {/* Glowing Node */}
+                <div className="absolute left-[11px] md:left-1/2 w-2.5 h-2.5 bg-primary rounded-full transform md:-translate-x-1/2 mt-2 shadow-[0_0_15px_rgba(0,229,255,0.8)] ring-4 ring-background" />
+
+                <div className="hidden md:block md:w-1/2" />
+                
+                <div className={`pl-12 md:w-1/2 md:pl-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
+                  <div className="p-8 rounded-3xl bg-background border border-white/5 hover:border-primary/30 transition-colors shadow-xl">
+                    <span className="inline-block px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm tracking-wider uppercase mb-4">
+                      {exp.period}
+                    </span>
+                    <h3 className="text-2xl font-bold font-display text-white mb-2">{exp.role}</h3>
+                    <h4 className="text-lg text-primary/80 mb-4">{exp.company}</h4>
+                    <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}

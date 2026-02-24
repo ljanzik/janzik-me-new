@@ -1,0 +1,71 @@
+import { motion } from "framer-motion";
+
+export function About() {
+  return (
+    <section className="py-32 bg-background relative" id="about">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative"
+          >
+            {/* abstract professional portrait fallback */}
+            <div className="aspect-[4/5] max-w-md mx-auto relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 border border-white/5 group">
+              <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-all duration-700" />
+              <img 
+                src="/images/profile.jpg" 
+                alt="Claas Voigt Profile" 
+                onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"; }}
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-20" />
+            </div>
+            {/* Decorative elements */}
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 blur-[64px] -z-10" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="space-y-10"
+          >
+            <div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Where Strategy meets <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">Execution</span>
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                With over 20 years of experience leading tech-driven organizations, my focus is bridging the gap between high-level strategy and ground-level execution. I build teams, optimize processes, and leverage AI to create scalable, resilient growth frameworks.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
+              <div>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">20<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Years Leadership</p>
+              </div>
+              <div>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Companies Advised</p>
+              </div>
+              <div>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">€100<span className="text-primary">M+</span></h4>
+                <p className="text-muted-foreground font-medium">Value Managed</p>
+              </div>
+              <div>
+                <h4 className="text-5xl font-display font-bold text-white mb-2 tracking-tight">5<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Major Turnarounds</p>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
