@@ -3,6 +3,12 @@ import { ArrowRight } from "lucide-react";
 
 const posts = [
   {
+    title: "Führen mit KI: Menschlich bleiben, Technologie nutzen",
+    excerpt: "Wie KI die Führung nicht ersetzt, sondern ergänzt und beschleunigt.",
+    date: "20. Feb 2024",
+    slug: "fuehren-mit-ki"
+  },
+  {
     title: "Die Zukunft der IT-Führung",
     excerpt: "Wie sich die Rolle des CIO in Zeiten von KI und Cloud-Native verändert.",
     date: "15. Feb 2024",
@@ -13,12 +19,6 @@ const posts = [
     excerpt: "Strategien für nachhaltiges Wachstum und operative Exzellenz.",
     date: "02. Jan 2024",
     slug: "resiliente-organisationen"
-  },
-  {
-    title: "Digitale Transformation im Mittelstand",
-    excerpt: "Herausforderungen und Chancen der Modernisierung von Legacy-Systemen.",
-    date: "20. Nov 2023",
-    slug: "digitale-transformation-mittelstand"
   }
 ];
 
