@@ -30,13 +30,13 @@ export function Hero() {
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
             Leif Janzik.<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-900">
               Digital Excellence.
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl font-light leading-relaxed">
-            Driving digital transformation and leading high-performing IT organizations with a focus on innovation and sustainable growth.
+            Gestaltung der digitalen Transformation und Führung leistungsstarker IT-Organisationen mit Fokus auf Innovation und nachhaltiges Wachstum.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -44,13 +44,13 @@ export function Hero() {
               href="#experience"
               className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 shadow-lg"
             >
-              View Track Record <ArrowRight className="w-5 h-5" />
+              Werdegang ansehen <ArrowRight className="w-5 h-5" />
             </a>
             <a 
               href="#contact"
               className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground border border-border font-semibold text-lg flex items-center justify-center backdrop-blur-md hover:bg-secondary/80 transition-all"
             >
-              Get in Touch
+              Kontakt aufnehmen
             </a>
           </div>
         </motion.div>

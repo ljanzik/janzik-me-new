@@ -36,29 +36,29 @@ export function About() {
           >
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Leif Janzik: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">Digital Leader</span>
+                Leif Janzik: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-800">Digital Leader</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                As an experienced IT executive, I specialize in navigating the complexities of modern digital landscapes. My approach combines strategic vision with technical depth to build resilient, innovative organizations that drive real business value.
+                Als erfahrener IT-Manager spezialisiere ich mich auf die Navigation in komplexen digitalen Landschaften. Mein Ansatz verbindet strategische Vision mit technischer Tiefe, um resiliente, innovative Organisationen aufzubauen, die echten Geschäftswert schaffen.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
               <div>
                 <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">15<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Years Experience</p>
+                <p className="text-muted-foreground font-medium">Jahre Erfahrung</p>
               </div>
               <div>
                 <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">30<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Core Projects</p>
+                <p className="text-muted-foreground font-medium">Kernprojekte</p>
               </div>
               <div>
                 <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
-                <p className="text-muted-foreground font-medium">Team Members Led</p>
+                <p className="text-muted-foreground font-medium">Teammitglieder geführt</p>
               </div>
               <div>
                 <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">99.9<span className="text-primary">%</span></h4>
-                <p className="text-muted-foreground font-medium">System Uptime</p>
+                <p className="text-muted-foreground font-medium">System-Verfügbarkeit</p>
               </div>
             </div>
           </motion.div>

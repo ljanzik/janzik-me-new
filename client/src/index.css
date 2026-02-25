@@ -19,7 +19,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
     
-    --primary: 221 83% 53%;
+    --primary: 221 45% 25%; /* Darker, muted blue like voigt.ag */
     --primary-foreground: 210 20% 98%;
     
     --secondary: 210 40% 96%;

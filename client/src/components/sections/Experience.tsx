@@ -8,8 +8,8 @@ export function Experience() {
     <section className="py-32 bg-card relative overflow-hidden" id="experience">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Professional <span className="text-primary">Journey</span></h2>
-          <p className="text-xl text-muted-foreground">A career dedicated to IT excellence, from technical engineering to executive leadership.</p>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Beruflicher <span className="text-primary">Werdegang</span></h2>
+          <p className="text-xl text-muted-foreground">Eine Karriere im Zeichen von IT-Exzellenz, vom technischen Engineering bis zur strategischen Führung.</p>
         </div>
 
         {isLoading ? (

@@ -13,8 +13,8 @@ export function Projects() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Key <span className="text-primary">Achievements</span></h2>
-            <p className="text-xl text-muted-foreground">Selected highlights of high-impact IT projects and transformations.</p>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Wichtige <span className="text-primary">Erfolge</span></h2>
+            <p className="text-xl text-muted-foreground">Ausgewählte Highlights von IT-Projekten und Transformationen mit hoher Auswirkung.</p>
           </div>
         </div>
 

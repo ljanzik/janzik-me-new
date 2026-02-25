@@ -9,34 +9,34 @@ async function seedDatabase() {
   if (existingExperiences.length === 0) {
     await storage.createExperience({
       role: "Digital Leader & IT Executive",
-      company: "janzik.me",
-      period: "2015 - Present",
-      description: "Driving digital transformation and leading high-performing IT organizations with a focus on sustainable growth and innovation.",
+      company: "Strategische IT-Führung",
+      period: "2015 - Heute",
+      description: "Gestaltung der digitalen Transformation und Führung leistungsstarker IT-Organisationen mit Fokus auf nachhaltiges Wachstum und Innovation.",
       order: 1
     });
     await storage.createExperience({
       role: "Senior IT Manager",
       company: "Enterprise Technology Group",
       period: "2010 - 2015",
-      description: "Managed global infrastructure projects and led cross-functional teams to deliver critical business systems.",
+      description: "Leitung globaler Infrastrukturprojekte und Führung funktionsübergreifender Teams zur Bereitstellung kritischer Business-Systeme.",
       order: 2
     });
     
-    await storage.createSkill({ name: "IT Strategy & Governance", category: "Leadership", proficiency: 95 });
-    await storage.createSkill({ name: "Digital Transformation", category: "Leadership", proficiency: 92 });
-    await storage.createSkill({ name: "Team Leadership & Development", category: "Leadership", proficiency: 90 });
-    await storage.createSkill({ name: "Cloud Strategy (AWS/Azure)", category: "Technical", proficiency: 85 });
-    await storage.createSkill({ name: "Agile & Lean Methodologies", category: "Methodology", proficiency: 88 });
+    await storage.createSkill({ name: "IT-Strategie & Governance", category: "Leadership", proficiency: 95 });
+    await storage.createSkill({ name: "Digitale Transformation", category: "Leadership", proficiency: 92 });
+    await storage.createSkill({ name: "Teamführung & Entwicklung", category: "Leadership", proficiency: 90 });
+    await storage.createSkill({ name: "Cloud-Strategie (AWS/Azure)", category: "Technical", proficiency: 85 });
+    await storage.createSkill({ name: "Agile & Lean Methoden", category: "Methodology", proficiency: 88 });
 
     await storage.createProject({
-      title: "Global Infrastructure Modernization",
-      description: "Led the transition of legacy on-premise systems to a modern cloud-native architecture.",
-      result: "Achieved 30% reduction in operational costs and 99.99% uptime."
+      title: "Globale Infrastruktur-Modernisierung",
+      description: "Leitung der Transition von Legacy-On-Premise-Systemen zu einer modernen Cloud-Native-Architektur.",
+      result: "30% Reduktion der Betriebskosten und 99,99% Verfügbarkeit erreicht."
     });
     await storage.createProject({
-      title: "IT Organization Restructuring",
-      description: "Redesigned the IT service delivery model to align with business objectives.",
-      result: "Improved internal stakeholder satisfaction by 45%."
+      title: "Restrukturierung der IT-Organisation",
+      description: "Neugestaltung des IT-Service-Delivery-Modells zur Ausrichtung an den Unternehmenszielen.",
+      result: "Verbesserung der Zufriedenheit interner Stakeholder um 45%."
     });
   }
 }

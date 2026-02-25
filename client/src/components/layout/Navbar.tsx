@@ -9,20 +9,20 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <Link href="/" className="font-display font-bold text-2xl tracking-tight text-foreground">
-          JANZIK<span className="text-primary">.ME</span>
+          LEIF JANZIK
         </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</a>
-          <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Experience</a>
-          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Projects</a>
-          <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Skills</a>
+          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Über mich</a>
+          <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Erfahrung</a>
+          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Projekte</a>
+          <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Kompetenzen</a>
         </nav>
         
         <div className="hidden md:block">
           <a href="#contact" className="px-6 py-2.5 rounded-full bg-primary/10 text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-            Get in Touch
+            Kontakt
           </a>
         </div>
 
