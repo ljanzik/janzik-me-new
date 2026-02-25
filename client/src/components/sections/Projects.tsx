@@ -14,7 +14,7 @@ export function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Wichtige <span className="text-primary">Erfolge</span></h2>
-            <p className="text-xl text-muted-foreground">Ausgewählte Highlights von IT-Projekten und Transformationen mit hoher Auswirkung.</p>
+            <p className="text-xl text-muted-foreground">Ausgewählte Highlights von IT-Projekten und Transformationen mit Fokus auf messbare Resultate.</p>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ export function Projects() {
                 <p className="text-muted-foreground mb-8 flex-grow leading-relaxed">{proj.description}</p>
                 
                 <div className="pt-6 border-t border-border mt-auto">
-                  <span className="text-xs font-mono text-primary uppercase tracking-widest block mb-2">The Impact</span>
+                  <span className="text-xs font-mono text-primary uppercase tracking-widest block mb-2">Das Resultat</span>
                   <p className="text-foreground font-medium">{proj.result}</p>
                 </div>
               </motion.div>

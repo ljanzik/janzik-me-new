@@ -1,10 +1,12 @@
 import { db } from "./db";
 import {
-  experiences, skills, projects, messages,
+  experiences, skills, projects, messages, certifications, blogPosts,
   type Experience, type InsertExperience,
   type Skill, type InsertSkill,
   type Project, type InsertProject,
-  type Message, type InsertMessage
+  type Message, type InsertMessage,
+  type Certification, type InsertCertification,
+  type BlogPost, type InsertBlogPost
 } from "@shared/schema";
 import { eq } from "drizzle-orm";
 
@@ -17,6 +19,12 @@ export interface IStorage {
   
   getProjects(): Promise<Project[]>;
   createProject(project: InsertProject): Promise<Project>;
+
+  getCertifications(): Promise<Certification[]>;
+  createCertification(certification: InsertCertification): Promise<Certification>;
+
+  getBlogPosts(): Promise<BlogPost[]>;
+  createBlogPost(post: InsertBlogPost): Promise<BlogPost>;
   
   getMessages(): Promise<Message[]>;
   createMessage(message: InsertMessage): Promise<Message>;
@@ -44,6 +52,22 @@ export class DatabaseStorage implements IStorage {
   }
   async createProject(project: InsertProject): Promise<Project> {
     const [created] = await db.insert(projects).values(project).returning();
+    return created;
+  }
+
+  async getCertifications(): Promise<Certification[]> {
+    return await db.select().from(certifications);
+  }
+  async createCertification(certification: InsertCertification): Promise<Certification> {
+    const [created] = await db.insert(certifications).values(certification).returning();
+    return created;
+  }
+
+  async getBlogPosts(): Promise<BlogPost[]> {
+    return await db.select().from(blogPosts);
+  }
+  async createBlogPost(post: InsertBlogPost): Promise<BlogPost> {
+    const [created] = await db.insert(blogPosts).values(post).returning();
     return created;
   }
 

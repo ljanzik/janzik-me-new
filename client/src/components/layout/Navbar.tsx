@@ -16,8 +16,9 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Über mich</a>
           <a href="#experience" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Erfahrung</a>
-          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Projekte</a>
+          <a href="#projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Erfolge</a>
           <a href="#skills" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Kompetenzen</a>
+          <a href="#blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Blog</a>
         </nav>
         
         <div className="hidden md:block">
@@ -38,11 +39,12 @@ export function Navbar() {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-white/5 p-4 flex flex-col gap-4 shadow-xl">
-          <a href="#about" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-white">About</a>
-          <a href="#experience" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-white">Experience</a>
-          <a href="#projects" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-white">Projects</a>
-          <a href="#skills" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-white">Skills</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="px-4 py-2 text-primary font-semibold">Let's Talk</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-foreground">Über mich</a>
+          <a href="#experience" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-foreground">Erfahrung</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-foreground">Erfolge</a>
+          <a href="#skills" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-foreground">Kompetenzen</a>
+          <a href="#blog" onClick={() => setIsOpen(false)} className="px-4 py-2 text-muted-foreground hover:text-foreground">Blog</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="px-4 py-2 text-primary font-semibold">Kontakt</a>
         </div>
       )}
     </header>
