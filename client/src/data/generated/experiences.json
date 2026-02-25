@@ -1,11 +1,19 @@
 [
   {
+    "role": "Director Software Development",
+    "company": "ncara GmbH",
+    "location": "",
+    "period": "2025 - Heute",
+    "description": "",
+    "order": 1
+  },
+  {
     "role": "VP Solutions Engineering",
     "company": "grandcentrix GmbH",
     "location": "Dortmund & Köln",
-    "period": "2021 - Heute",
+    "period": "2021 - 2025",
     "description": "Führung von 3 Hauptbereichen (Embedded, Cloud, App) und Spezialdisziplinen. Reorganisation des Unternehmens in 2 Säulen (Produkt & Dienstleistungsgeschäft). Schnittstelle zwischen Technik, Vertrieb und Kunden. Kommissarische Verantwortung für den gesamten Dienstleistungsbereich. Mitglied des Leadership-Teams.",
-    "order": 1
+    "order": 2
   },
   {
     "role": "Lead Software Development",
@@ -13,7 +21,7 @@
     "location": "Gelsenkirchen",
     "period": "2019 - 2021",
     "description": "Führung des Software-Entwicklungsbereichs. Einführung neuer Technologien, Relaunch und Neuentwicklung mehrerer Software-Lösungen. Teamentwicklung und Etablierung der Abteilung als Partner der Fachbereiche.",
-    "order": 2
+    "order": 3
   },
   {
     "role": "Solution Architect // Managing Consultant",
@@ -21,7 +29,7 @@
     "location": "Dortmund",
     "period": "2012 - 2019",
     "description": "Vom Software Developer über Teamleiter und Head of Competence Center bis zum Solution Architect. Aufbau mehrerer Standorte und Führungsstrukturen in starker Wachstumsphase. Beratung von mittelständischen Unternehmen und Konzernen rund um ihre Mobile Strategie.",
-    "order": 3
+    "order": 4
   },
   {
     "role": "Software Engineer",
@@ -29,6 +37,6 @@
     "location": "Oberhausen",
     "period": "2005 - 2012",
     "description": "Einstieg als Werkstudent, dann Software Engineer. Professionelle Software-Entwicklung im Bereich Mobile und digitale Medien. Grundstein der technischen Karriere.",
-    "order": 4
+    "order": 5
   }
 ]
