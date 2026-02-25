@@ -22,7 +22,7 @@ export function Certifications() {
               </div>
               <div>
                 <h4 className="font-bold text-foreground mb-1">{cert.name}</h4>
-                <p className="text-sm text-muted-foreground">{cert.issuer} • {cert.date}</p>
+                <p className="text-sm text-muted-foreground">{[cert.issuer, cert.date].filter(Boolean).join(" • ")}</p>
               </div>
             </motion.div>
           ))}
