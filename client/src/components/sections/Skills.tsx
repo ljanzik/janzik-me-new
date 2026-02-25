@@ -13,7 +13,7 @@ export function Skills() {
         <div className="flex flex-wrap gap-4 justify-center max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <motion.div
-              key={skill.id}
+              key={skill.name}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

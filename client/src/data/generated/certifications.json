@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Certified Information Systems Auditor (CISA)",
+    "issuer": "ISACA",
+    "date": "2018"
+  },
+  {
+    "name": "ITIL 4 Managing Professional",
+    "issuer": "AXELOS",
+    "date": "2020"
+  },
+  {
+    "name": "Professional Scrum Master II",
+    "issuer": "Scrum.org",
+    "date": "2019"
+  },
+  {
+    "name": "AWS Certified Solutions Architect",
+    "issuer": "Amazon Web Services",
+    "date": "2021"
+  }
+]

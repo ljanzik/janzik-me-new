@@ -12,6 +12,9 @@ interface ContentFile {
 
 const contentFiles: ContentFile[] = [
   { source: "experiences.yaml", output: "experiences.json" },
+  { source: "skills.yaml", output: "skills.json" },
+  { source: "projects.yaml", output: "projects.json" },
+  { source: "certifications.yaml", output: "certifications.json" },
 ];
 
 function generate() {
