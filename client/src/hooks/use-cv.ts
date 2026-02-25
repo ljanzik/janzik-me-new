@@ -47,6 +47,29 @@ export function useProjects() {
   });
 }
 
+export function useBlogPosts() {
+  return useQuery({
+    queryKey: ["/api/blog"],
+    queryFn: async () => {
+      const res = await fetch("/api/blog");
+      if (!res.ok) throw new Error("Failed to fetch blog posts");
+      return res.json();
+    }
+  });
+}
+
+export function useBlogPost(slug: string) {
+  return useQuery({
+    queryKey: ["/api/blog", slug],
+    queryFn: async () => {
+      const res = await fetch(`/api/blog/${slug}`);
+      if (!res.ok) throw new Error("Failed to fetch blog post");
+      return res.json();
+    },
+    enabled: !!slug
+  });
+}
+
 export function useCreateMessage() {
   const queryClient = useQueryClient();
   return useMutation({

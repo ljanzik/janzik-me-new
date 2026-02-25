@@ -3,6 +3,7 @@ import type { Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
+import { getAllPosts, getPostBySlug } from "./blog";
 
 async function seedDatabase() {
   const existingExperiences = await storage.getExperiences();
@@ -62,6 +63,17 @@ export async function registerRoutes(
   app.get(api.projects.list.path, async (req, res) => {
     const data = await storage.getProjects();
     res.json(data);
+  });
+
+  app.get("/api/blog", (req, res) => {
+    const posts = getAllPosts();
+    res.json(posts);
+  });
+
+  app.get("/api/blog/:slug", (req, res) => {
+    const post = getPostBySlug(req.params.slug);
+    if (!post) return res.status(404).json({ message: "Beitrag nicht gefunden" });
+    res.json(post);
   });
 
   app.post(api.messages.create.path, async (req, res) => {

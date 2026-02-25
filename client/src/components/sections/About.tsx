@@ -39,7 +39,7 @@ export function About() {
                 Leif Janzik: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-800">Digital Leader</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Als erfahrener IT-Manager spezialisiere ich mich auf die Navigation in komplexen digitalen Landschaften. Mein Fokus liegt auf dem **Führen mit KI** – menschlich führen, beschleunigt durch Technologie. Ich verbindet strategische Vision mit technischer Tiefe, um resiliente, innovative Organisationen aufzubauen, die echten Geschäftswert schaffen.
+                Als erfahrener IT-Manager spezialisiere ich mich auf die Navigation in komplexen digitalen Landschaften. Mein Fokus liegt auf dem <strong className="text-foreground">Führen mit KI</strong> – menschlich führen, beschleunigt durch Technologie. Ich verbinde strategische Vision mit technischer Tiefe, um resiliente, innovative Organisationen aufzubauen, die echten Geschäftswert schaffen.
               </p>
             </div>
 
