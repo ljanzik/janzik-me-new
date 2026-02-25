@@ -1,69 +1,27 @@
 - role: "VP Solutions Engineering"
   company: "grandcentrix GmbH"
   location: "Dortmund & Köln"
-  period: "Jan 2022 - Heute"
-  description: "Führung von 3 Hauptbereichen (Embedded, Cloud, App) und Spezialdisziplinen. Reorganisation des Unternehmens in 2 Säulen. Schnittstelle zwischen Technik, Vertrieb und Kunden. Kommissarische Verantwortung für den gesamten Dienstleistungsbereich. Mitglied des Leadership-Teams."
+  period: "2021 - Heute"
+  description: "Führung von 3 Hauptbereichen (Embedded, Cloud, App) und Spezialdisziplinen. Reorganisation des Unternehmens in 2 Säulen (Produkt & Dienstleistungsgeschäft). Schnittstelle zwischen Technik, Vertrieb und Kunden. Kommissarische Verantwortung für den gesamten Dienstleistungsbereich. Mitglied des Leadership-Teams."
   order: 1
-
-- role: "Competence Manager Human Computer Interaction"
-  company: "grandcentrix GmbH"
-  location: "Dortmund & Köln"
-  period: "Feb 2021 - Jan 2022"
-  description: "Reorganisation des Bereichs im Rahmen der Neuausrichtung. Bindung von Mitarbeitern während disruptiver Phase mit hoher Fluktuation. Aufbau und Coaching neuer Teamleads. Führung in 100% Remote-Situation."
-  order: 2
 
 - role: "Lead Software Development"
   company: "ZGS Bildungs-GmbH"
   location: "Gelsenkirchen"
-  period: "Nov 2019 - Jan 2021"
+  period: "2019 - 2021"
   description: "Führung des Software-Entwicklungsbereichs. Einführung neuer Technologien, Relaunch und Neuentwicklung mehrerer Software-Lösungen. Teamentwicklung und Etablierung der Abteilung als Partner der Fachbereiche."
-  order: 3
+  order: 2
 
 - role: "Solution Architect // Managing Consultant"
   company: "adesso mobile solutions GmbH"
   location: "Dortmund"
-  period: "Jan 2019 - Okt 2019"
-  description: "Mitaufbau des Bereichs Consulting. Beratung von mittelständischen Unternehmen und Konzernen rund um ihre Mobile Strategie. Aufbau von Entwicklungsteams beim Kunden."
-  order: 4
-
-- role: "Solution Architect // Teamlead Cross Industries"
-  company: "adesso mobile solutions GmbH"
-  location: "Dortmund"
-  period: "Sep 2017 - Jan 2019"
-  description: "Aufbau des Bereichs Cross Industries. Verantwortung für die technische Umsetzung der Projekte. Konvertierung von Neukunden und Ansprechpartner für technische Neuerungen bei Bestandskunden."
-  order: 5
-
-- role: "Head of Competence Center App Development"
-  company: "adesso mobile solutions GmbH"
-  location: "Dortmund"
-  period: "Nov 2014 - Aug 2017"
-  description: "Starkes Wachstum der Engineering-Mannschaft. Aufbau mehrerer neuer Standorte und neuer Führungsstrukturen (Teamleads, Architektur-Board). Einführung strukturierter QM-Prozesse. Mitarbeiterschulung und -entwicklung."
-  order: 6
-
-- role: "Teamleiter Android Development"
-  company: "adesso mobile solutions GmbH"
-  location: "Dortmund"
-  period: "Mrz 2013 - Nov 2014"
-  description: "Fachliche und disziplinarische Führung des Android-Entwicklungsteams. Sicherstellung der technischen Qualität und Weiterentwicklung der Teammitglieder."
-  order: 7
-
-- role: "Software Developer iOS & Android"
-  company: "adesso mobile solutions GmbH"
-  location: "Dortmund"
-  period: "Okt 2012 - Mrz 2013"
-  description: "Entwicklung mobiler Anwendungen für iOS und Android im Kundenauftrag."
-  order: 8
+  period: "2012 - 2019"
+  description: "Vom Software Developer über Teamleiter und Head of Competence Center bis zum Solution Architect. Aufbau mehrerer Standorte und Führungsstrukturen in starker Wachstumsphase. Beratung von mittelständischen Unternehmen und Konzernen rund um ihre Mobile Strategie."
+  order: 3
 
 - role: "Software Engineer"
   company: "conVISUAL AG"
   location: "Oberhausen"
-  period: "Feb 2010 - Okt 2012"
-  description: "Software-Entwicklung im Bereich Mobile und digitale Medien."
-  order: 9
-
-- role: "Werkstudent Software Engineering"
-  company: "conVISUAL AG"
-  location: "Oberhausen"
-  period: "Mrz 2005 - Feb 2010"
-  description: "Praxisnahe Software-Entwicklung studienbegleitend. Erste Erfahrungen in der professionellen Softwareentwicklung."
-  order: 10
+  period: "2005 - 2012"
+  description: "Einstieg als Werkstudent, dann Software Engineer. Professionelle Software-Entwicklung im Bereich Mobile und digitale Medien. Grundstein der technischen Karriere."
+  order: 4
