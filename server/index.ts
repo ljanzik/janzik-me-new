@@ -2,6 +2,9 @@ import { createServer } from "vite";
 import { execSync } from "child_process";
 
 async function startDev() {
+  console.log("Generating content from config files...");
+  execSync("npx tsx scripts/generate-content.ts", { stdio: "inherit" });
+
   console.log("Generating blog data from markdown...");
   execSync("npx tsx scripts/generate-blog.ts", { stdio: "inherit" });
 

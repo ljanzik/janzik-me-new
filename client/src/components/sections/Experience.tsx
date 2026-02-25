@@ -13,9 +13,9 @@ export function Experience() {
         <div className="max-w-4xl mx-auto relative">
           <div className="absolute left-[15px] md:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-primary via-primary/20 to-transparent transform md:-translate-x-1/2" />
 
-          {experiences.sort((a, b) => a.order - b.order).map((exp, index) => (
+          {[...experiences].sort((a, b) => a.order - b.order).map((exp, index) => (
             <motion.div
-              key={exp.id}
+              key={exp.order}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}

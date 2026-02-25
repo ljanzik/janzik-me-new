@@ -1,5 +1,4 @@
 export interface Experience {
-  id: number;
   role: string;
   company: string;
   period: string;
@@ -27,24 +26,8 @@ export interface Certification {
   date: string;
 }
 
-export const experiences: Experience[] = [
-  {
-    id: 1,
-    role: "Digital Leader & IT Executive",
-    company: "Strategische IT-Führung",
-    period: "2015 - Heute",
-    description: "Gestaltung der digitalen Transformation und Führung leistungsstarker IT-Organisationen mit Fokus auf nachhaltiges Wachstum und Innovation.",
-    order: 1
-  },
-  {
-    id: 2,
-    role: "Senior IT Manager",
-    company: "Enterprise Technology Group",
-    period: "2010 - 2015",
-    description: "Leitung globaler Infrastrukturprojekte und Führung funktionsübergreifender Teams zur Bereitstellung kritischer Business-Systeme.",
-    order: 2
-  }
-];
+import generatedExperiences from "./generated/experiences.json";
+export const experiences: Experience[] = generatedExperiences;
 
 export const skills: Skill[] = [
   { id: 1, name: "IT-Strategie & Governance", category: "Leadership", proficiency: 95 },

@@ -1,0 +1,11 @@
+- role: "Digital Leader & IT Executive"
+  company: "Strategische IT-Führung"
+  period: "2015 - Heute"
+  description: "Gestaltung der digitalen Transformation und Führung leistungsstarker IT-Organisationen mit Fokus auf nachhaltiges Wachstum und Innovation."
+  order: 1
+
+- role: "Senior IT Manager"
+  company: "Enterprise Technology Group"
+  period: "2010 - 2015"
+  description: "Leitung globaler Infrastrukturprojekte und Führung funktionsübergreifender Teams zur Bereitstellung kritischer Business-Systeme."
+  order: 2

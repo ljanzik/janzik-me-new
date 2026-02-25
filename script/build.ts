@@ -5,6 +5,9 @@ import { execSync } from "child_process";
 async function buildAll() {
   await rm("dist", { recursive: true, force: true });
 
+  console.log("generating content from config files...");
+  execSync("npx tsx scripts/generate-content.ts", { stdio: "inherit" });
+
   console.log("generating blog data from markdown...");
   execSync("npx tsx scripts/generate-blog.ts", { stdio: "inherit" });
 
