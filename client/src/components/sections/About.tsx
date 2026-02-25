@@ -59,12 +59,12 @@ export function About() {
                 <p className="text-muted-foreground font-medium">Jahre Führungserfahrung</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">3</h4>
-                <p className="text-muted-foreground font-medium">Unternehmen geführt</p>
+                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">50<span className="text-primary">+</span></h4>
+                <p className="text-muted-foreground font-medium">Mitarbeitende geführt</p>
               </div>
               <div>
-                <h4 className="text-5xl font-display font-bold text-foreground mb-2 tracking-tight">IoT<span className="text-primary">&</span>KI</h4>
-                <p className="text-muted-foreground font-medium">Technologie-Fokus</p>
+                <h4 className="text-4xl font-display font-bold text-foreground mb-2 tracking-tight">Technik<span className="text-primary">&</span>Mensch</h4>
+                <p className="text-muted-foreground font-medium">Mein Antrieb</p>
               </div>
             </div>
           </motion.div>
