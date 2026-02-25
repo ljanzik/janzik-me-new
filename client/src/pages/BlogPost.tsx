@@ -1,12 +1,12 @@
 import { useParams, Link } from "wouter";
-import { useBlogPost } from "@/hooks/use-cv";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ArrowLeft } from "lucide-react";
+import blogPosts from "@/data/blog-posts.json";
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const { data: post, isLoading } = useBlogPost(slug || "");
+  const post = blogPosts.find((p) => p.slug === slug);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -17,13 +17,7 @@ export default function BlogPost() {
             <ArrowLeft className="w-4 h-4" /> Zurück zur Übersicht
           </Link>
 
-          {isLoading ? (
-            <div className="space-y-6">
-              <div className="h-12 bg-muted rounded-xl animate-pulse w-3/4" />
-              <div className="h-6 bg-muted rounded animate-pulse w-1/4" />
-              <div className="h-96 bg-muted rounded-xl animate-pulse" />
-            </div>
-          ) : post ? (
+          {post ? (
             <article>
               <header className="mb-12">
                 <span className="text-sm font-mono text-primary mb-4 block">

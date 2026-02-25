@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
-
-const certs = [
-  { name: "Certified Information Systems Auditor (CISA)", issuer: "ISACA", date: "2018" },
-  { name: "ITIL 4 Managing Professional", issuer: "AXELOS", date: "2020" },
-  { name: "Professional Scrum Master II", issuer: "Scrum.org", date: "2019" },
-  { name: "AWS Certified Solutions Architect", issuer: "Amazon Web Services", date: "2021" }
-];
+import { certifications } from "@/data/cv";
 
 export function Certifications() {
   return (
@@ -14,7 +8,7 @@ export function Certifications() {
       <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-display font-bold mb-12 text-center">Zertifizierungen</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {certs.map((cert, index) => (
+          {certifications.map((cert, index) => (
             <motion.div
               key={cert.name}
               initial={{ opacity: 0, scale: 0.95 }}

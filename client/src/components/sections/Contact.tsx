@@ -1,46 +1,53 @@
 import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { insertMessageSchema, type InsertMessage } from "@shared/schema";
-import { useCreateMessage } from "@/hooks/use-cv";
-import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 import { Send, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+
+const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL || "/api/contact";
 
 export function Contact() {
-  const form = useForm<InsertMessage>({
-    resolver: zodResolver(insertMessageSchema),
-    defaultValues: { name: "", email: "", message: "" }
-  });
-  
-  const mutation = useCreateMessage();
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
   const { toast } = useToast();
 
-  const onSubmit = (data: InsertMessage) => {
-    mutation.mutate(data, {
-      onSuccess: () => {
-        toast({ 
-          title: "Nachricht erhalten.", 
-          description: "Ich werde mich so schnell wie möglich bei Ihnen melden.",
-        });
-        form.reset();
-      },
-      onError: (err) => {
-        toast({ 
-          title: "Senden fehlgeschlagen", 
-          description: err.message, 
-          variant: "destructive" 
-        });
-      }
-    });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.message) return;
+
+    setSending(true);
+    try {
+      const res = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Fehler beim Senden");
+      toast({
+        title: "Nachricht erhalten.",
+        description: "Ich werde mich so schnell wie möglich bei Ihnen melden.",
+      });
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      toast({
+        title: "Senden fehlgeschlagen",
+        description: "Bitte versuchen Sie es später erneut.",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
     <section className="py-32 bg-background relative overflow-hidden" id="contact">
-      {/* Decorative Blur */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-4xl mx-auto bg-card rounded-[2.5rem] border border-white/10 p-8 md:p-16 shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-card rounded-[2.5rem] border border-border p-8 md:p-16 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             <div>
@@ -62,54 +69,54 @@ export function Contact() {
             </div>
 
             <div>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-foreground/80">Name</label>
                   <input
                     id="name"
-                    {...form.register("name")}
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
                     className="w-full px-5 py-4 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     placeholder="Ihr Name"
                   />
-                  {form.formState.errors.name && (
-                    <p className="text-destructive text-sm mt-1">{form.formState.errors.name.message}</p>
-                  )}
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-foreground/80">E-Mail</label>
                   <input
                     id="email"
+                    name="email"
                     type="email"
-                    {...form.register("email")}
+                    value={form.email}
+                    onChange={handleChange}
+                    required
                     className="w-full px-5 py-4 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                     placeholder="name@beispiel.de"
                   />
-                  {form.formState.errors.email && (
-                    <p className="text-destructive text-sm mt-1">{form.formState.errors.email.message}</p>
-                  )}
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground/80">Nachricht</label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
-                    {...form.register("message")}
+                    value={form.message}
+                    onChange={handleChange}
+                    required
                     className="w-full px-5 py-4 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
                     placeholder="Wie kann ich Ihnen helfen?"
                   />
-                  {form.formState.errors.message && (
-                    <p className="text-destructive text-sm mt-1">{form.formState.errors.message.message}</p>
-                  )}
                 </div>
 
                 <button
                   type="submit"
-                  disabled={mutation.isPending}
+                  disabled={sending}
                   className="w-full px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {mutation.isPending ? (
+                  {sending ? (
                     <><Loader2 className="w-5 h-5 animate-spin" /> Sendet...</>
                   ) : (
                     <><Send className="w-5 h-5" /> Nachricht senden</>
