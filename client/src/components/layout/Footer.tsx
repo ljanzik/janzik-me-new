@@ -12,7 +12,7 @@ export function Footer() {
         </div>
         
         <div className="flex gap-6">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/leifjanzik/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Impressum</a>
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Datenschutz</a>
         </div>

@@ -4,9 +4,7 @@ import { ArrowRight } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        {/* abstract modern architecture/tech background fallback */}
         <img
           src="/images/hero-bg.jpg"
           alt="Hero Background"
@@ -25,30 +23,32 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 border border-primary/10 mb-8 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-foreground/80 tracking-wide">Digital Leader & IT Executive</span>
+            <span className="text-sm font-medium text-foreground/80 tracking-wide">VP Solutions Engineering | IT-Führungskraft</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
             Leif Janzik.<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-900">
-              Digital Excellence.
+              Menschlich führen.
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl font-light leading-relaxed">
-            Menschlich führen, beschleunigt durch KI. Gestaltung der digitalen Transformation und Führung leistungsstarker IT-Organisationen.
+            An der Schnittstelle zwischen Technik, Vertrieb und Fachbereichen. Digitale Transformation gestalten, Teams entwickeln, Ergebnisse liefern.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
               href="#experience"
               className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 shadow-lg"
+              data-testid="button-view-experience"
             >
               Werdegang ansehen <ArrowRight className="w-5 h-5" />
             </a>
             <a 
               href="#contact"
               className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground border border-border font-semibold text-lg flex items-center justify-center backdrop-blur-md hover:bg-secondary/80 transition-all"
+              data-testid="button-contact"
             >
               Kontakt aufnehmen
             </a>

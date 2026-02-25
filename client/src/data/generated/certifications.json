@@ -1,22 +1,32 @@
 [
   {
-    "name": "Certified Information Systems Auditor (CISA)",
-    "issuer": "ISACA",
-    "date": "2018"
+    "name": "License to Lead",
+    "issuer": "Führungskräfteentwicklung",
+    "date": ""
   },
   {
-    "name": "ITIL 4 Managing Professional",
-    "issuer": "AXELOS",
-    "date": "2020"
+    "name": "Software Testing (ISTQB, CMAP)",
+    "issuer": "ISTQB / CMAP",
+    "date": ""
   },
   {
-    "name": "Professional Scrum Master II",
-    "issuer": "Scrum.org",
-    "date": "2019"
+    "name": "Projektmanagement",
+    "issuer": "Zertifizierungsstelle",
+    "date": ""
   },
   {
-    "name": "AWS Certified Solutions Architect",
-    "issuer": "Amazon Web Services",
-    "date": "2021"
+    "name": "Requirements Engineering (IREB)",
+    "issuer": "IREB",
+    "date": ""
+  },
+  {
+    "name": "Train the Trainer",
+    "issuer": "Weiterbildung",
+    "date": ""
+  },
+  {
+    "name": "Typisch Mensch – Persönlichkeitstendenzen erkennen",
+    "issuer": "Persönlichkeitsentwicklung",
+    "date": ""
   }
 ]

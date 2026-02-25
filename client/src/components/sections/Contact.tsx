@@ -59,7 +59,7 @@ export function Contact() {
               <div className="space-y-4">
                 <div className="flex flex-col">
                   <span className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-1">Standort</span>
-                  <span className="text-foreground font-medium text-lg">Hamburg & deutschlandweit</span>
+                  <span className="text-foreground font-medium text-lg">NRW & deutschlandweit</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-1">Verfügbarkeit</span>

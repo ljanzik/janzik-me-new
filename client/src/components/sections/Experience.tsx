@@ -32,7 +32,8 @@ export function Experience() {
                     {exp.period}
                   </span>
                   <h3 className="text-2xl font-bold font-display text-foreground mb-2">{exp.role}</h3>
-                  <h4 className="text-lg text-primary/80 mb-4">{exp.company}</h4>
+                  <h4 className="text-lg text-primary/80 mb-1">{exp.company}</h4>
+                  {exp.location && <p className="text-sm text-muted-foreground mb-4">{exp.location}</p>}
                   <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
                 </div>
               </div>

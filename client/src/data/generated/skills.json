@@ -1,32 +1,72 @@
 [
   {
-    "name": "IT-Strategie & Governance",
-    "category": "Leadership",
+    "name": "Leadership",
+    "category": "Führung",
     "proficiency": 95
   },
   {
-    "name": "Digitale Transformation",
-    "category": "Leadership",
+    "name": "Leading in the Matrix",
+    "category": "Führung",
     "proficiency": 92
   },
   {
-    "name": "Teamführung & Entwicklung",
-    "category": "Leadership",
+    "name": "Multidisziplinäres Teammanagement",
+    "category": "Führung",
+    "proficiency": 93
+  },
+  {
+    "name": "Change Management",
+    "category": "Führung",
     "proficiency": 90
   },
   {
-    "name": "Cloud-Strategie (AWS/Azure)",
-    "category": "Technical",
-    "proficiency": 85
+    "name": "Coaching & Mentoring",
+    "category": "Führung",
+    "proficiency": 90
   },
   {
-    "name": "Agile & Lean Methoden",
-    "category": "Methodology",
+    "name": "Konfliktmanagement",
+    "category": "Führung",
     "proficiency": 88
   },
   {
-    "name": "KI-gestützte Führung",
-    "category": "Leadership",
+    "name": "Eskalationsmanagement",
+    "category": "Führung",
+    "proficiency": 88
+  },
+  {
+    "name": "IT-Strategie",
+    "category": "Strategie",
+    "proficiency": 92
+  },
+  {
+    "name": "Digitale Transformation",
+    "category": "Strategie",
+    "proficiency": 90
+  },
+  {
+    "name": "Internet of Things",
+    "category": "Technologie",
+    "proficiency": 88
+  },
+  {
+    "name": "Künstliche Intelligenz",
+    "category": "Technologie",
+    "proficiency": 85
+  },
+  {
+    "name": "Requirements Engineering",
+    "category": "Methodik",
+    "proficiency": 88
+  },
+  {
+    "name": "Projektmanagement",
+    "category": "Methodik",
+    "proficiency": 90
+  },
+  {
+    "name": "Interkulturelle Kommunikation",
+    "category": "Kommunikation",
     "proficiency": 88
   }
 ]
